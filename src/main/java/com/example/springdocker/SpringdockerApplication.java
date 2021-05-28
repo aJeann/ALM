@@ -3,6 +3,7 @@ package com.example.springdocker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
@@ -15,7 +16,7 @@ public class SpringdockerApplication {
     @RestController
     class GreetingController{
 
-        @GetMapping("/")
+        @RequestMapping("/")
         public String greeting(){
             return "Välkommen till Axels springboot-sida för ALM-kursen";
         }
