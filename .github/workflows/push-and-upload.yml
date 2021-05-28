@@ -32,7 +32,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: min-java-image:${{ github.run_number }}
+          tags: neaja/min-java-image:${{ github.run_number }}
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
